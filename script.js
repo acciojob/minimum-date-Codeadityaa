@@ -1,6 +1,16 @@
 function minDate(dates) {
   //write you code here
-	 return [...dates].sort();
+	let earliest = dates[0];
+  
+  for (let i = 1; i < dates.length; i++) {
+    if (dates[i] < earliest) {
+      earliest = dates[i];
+    } else {
+      // current date is later or equal, do nothing
+    }
+  }
+  
+  return earliest;
 
 }
 
