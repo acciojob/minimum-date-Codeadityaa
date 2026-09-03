@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
 }
-
+ return [...dates].sort();
 // Do not change the code
 
 var dates = [
